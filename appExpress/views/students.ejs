@@ -1,0 +1,16 @@
+<%- include('templates/header',{title:"students"}); -%>
+    <h2>List of students</h2>
+    
+    <p>
+        <ul>
+            <% students.forEach(function(student){ %>
+                <li>
+                    His name is <%= student.name%> and his age <%= student.age%> 
+                </li>
+                
+            <% }); %>
+          </ul>
+    </p>
+
+
+    <%- include('templates/footer'); -%>
